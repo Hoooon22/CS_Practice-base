@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method_Cal", "..\Calculator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefReturn", "..\RefReturn\RefReturn.csproj", "{487838F8-E0D8-4D1D-A00A-266A567C5449}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingOut", "..\UsingOut\UsingOut.csproj", "{DBB12F78-9E42-41CF-87E9-D60CD470C0EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{487838F8-E0D8-4D1D-A00A-266A567C5449}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{487838F8-E0D8-4D1D-A00A-266A567C5449}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{487838F8-E0D8-4D1D-A00A-266A567C5449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB12F78-9E42-41CF-87E9-D60CD470C0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB12F78-9E42-41CF-87E9-D60CD470C0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB12F78-9E42-41CF-87E9-D60CD470C0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB12F78-9E42-41CF-87E9-D60CD470C0EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
