@@ -17,7 +17,8 @@ namespace DefaultImplementation
     {
         public void WriteLog(string message)
         {
-
+            Console.WriteLine(
+                $"{DateTime.Now.ToLocalTime()}, {message}");
         }
     }
 
@@ -25,6 +26,13 @@ namespace DefaultImplementation
     {
         static void Main(string[] args)
         {
+            ILogger logger = new ConsoleLogger();
+            logger.WriteLog("System Up");
+            logger.WriteError("System Fail");
+
+            ConsoleLogger clogger = new ConsoleLogger();
+            clogger.WriteLog("System Up"); // OK
+            // clogger.WriteError("System Fail"); // Compile Error
         }
     }
 }
