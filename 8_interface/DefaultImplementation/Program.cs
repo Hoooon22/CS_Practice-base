@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DefaultImplementation
 {
@@ -13,6 +9,14 @@ namespace DefaultImplementation
         void WriteError(string error)
         {
             WriteLog($"Error : {error}");
+
+        }
+    }
+
+    class ConsoleLogger : ILogger
+    {
+        public void WriteLog(string message)
+        {
 
         }
     }
