@@ -7,19 +7,19 @@ namespace PropertiesInAbstractClass
         private static int serial = 0;
         public string SerialID
         {
-            get {return String.Format("{0:5d}", serial++);}
+            get {return String.Format("{0:d5}", serial++);}
         }
 
-        abstract public DateTime Productdate
+        abstract public DateTime ProductDate
         {
             get;
             set;
         }
     }
 
-    class Myproduct : Product
+    class MyProduct : Product
     {
-        public override DateTime Productdate
+        public override DateTime ProductDate
         {
             get;
             set;
@@ -30,7 +30,19 @@ namespace PropertiesInAbstractClass
     {
         static void Main(string[] args)
         {
+            Product product_1 = new MyProduct()
+            { ProductDate = new DateTime(2018, 1, 10) };
 
+            Console.WriteLine("Product:{0}, Product Date :{1}",
+                product_1.SerialID,
+                product_1.ProductDate);
+
+            Product product_2 = new MyProduct()
+            { ProductDate = new DateTime(2018, 2, 3) };
+
+            Console.WriteLine("Product:{0}, Pruduct :{1}",
+                product_2.SerialID,
+                product_2.ProductDate);
         }
     }
 }
