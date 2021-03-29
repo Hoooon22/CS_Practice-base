@@ -36,6 +36,12 @@ namespace MoreOnArray
 
             Console.WriteLine($"EveryOne passed ? : " +
                 $"{Array.TrueForAll<int>(scores, CheckPassed)}");
+
+            int index = Array.FindIndex<int>(scores, (score) => score < 60);
+
+            scores[index] = 61;
+            Console.WriteLine($"EveryOne passed ? : " +
+                $"{Array.TrueForAll<int>(scores, CheckPassed)}");
         }
     }
 }
