@@ -10,7 +10,6 @@ namespace UsingHashtable
             Hashtable ht = new Hashtable();
             ht["하나"] = "one";
 
-
             Console.WriteLine(ht["하나"]);
         }
     }
