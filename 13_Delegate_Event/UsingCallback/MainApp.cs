@@ -39,7 +39,6 @@ namespace UsingCallback
                     if (Comparer(Dataset[j], Dataset[j+1]) > 0)
                     {
                         temp = Dataset[j + 1];
-
                     }
                 }
             }
