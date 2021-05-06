@@ -2,11 +2,11 @@
 
 namespace SimpleWindow
 {
-    class Program
+    class MainApp : System.Windows.Forms.Form
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            System.Windows.Forms.Application.Run(new MainApp());
         }
     }
 }
